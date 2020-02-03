@@ -4,7 +4,7 @@
 
 **Tags** : extension, chrome, timer, pomodoro, timeout
 
-**Installation** : Download or clone the repository and package the extension directly in the browser extension options
+**Installation** : [Download](https://drive.google.com/open?id=1KZeOURkgLRXYMrtFFwwziJpOxntIQsiX) or clone the repository and package the extension directly in the browser extension options
 - more tools -> extension -> activate developer mode -> load the unpackaged extension
 
 A chrome extension that incorporates some of the basics of the pomodoro timer.
