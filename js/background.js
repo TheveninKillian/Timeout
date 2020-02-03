@@ -105,7 +105,7 @@ class Timeout {
     this.chrome.runtime.onInstalled.addListener(() => {
 
       this.chrome.contextMenus.create({
-        id: 'peoeoccoplmmffcjcoejipjiddnjjble',
+        id: 'bjaehbogcofhnifcmekpipjpoompomgh',
         title: 'Stop timer',
         contexts: ['browser_action']
       });
@@ -186,7 +186,7 @@ class Timeout {
 
         this.reset()
         this.initClick = 2
-        this.openWin = window.open('chrome-extension://peoeoccoplmmffcjcoejipjiddnjjble/paused.html');
+        this.openWin = window.open('../paused.html');
         this.initOpenWin = true
 
       }
@@ -211,7 +211,7 @@ class Timeout {
 
           this.reset()
           this.initClick = 2
-          this.openWin = window.open('chrome-extension://peoeoccoplmmffcjcoejipjiddnjjble/work.html');
+          this.openWin = window.open('../work.html');
           this.initOpenWin = true
 
         }
