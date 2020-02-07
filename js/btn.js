@@ -4,17 +4,25 @@ const btnStart = document.getElementById('btn-startTimer')
 const time = document.getElementById('time')
 
 if (btnPaused !== null) {
-  time.textContent = localStorage.getItem('pause') + ' minutes'
+  let parsePause = parseInt(localStorage.getItem('pause'))
 
-  btnPaused.addEventListener('click', () => {
-    localStorage.setItem('isPause', 'activePause')
-  })
+  if(parsePause !== 0){
+    time.textContent = localStorage.getItem('pause') + ' minutes'
+
+    btnPaused.addEventListener('click', () => {
+      localStorage.setItem('isPause', 'activePause')
+    })
+  }else {
+    time.textContent = 'Pas de pause !'
+
+    btnPaused.style.display = 'none'
+  }
 }
 
 if (btnStart !== null) {
 
-  parseHour = parseInt(localStorage.getItem('hour'))
-  parseMinute = parseInt(localStorage.getItem('minute'))
+  let parseHour = parseInt(localStorage.getItem('hour'))
+  let parseMinute = parseInt(localStorage.getItem('minute'))
 
   if (parseHour > 0 && parseMinute > 0) {
 
