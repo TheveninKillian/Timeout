@@ -4,9 +4,6 @@
 
 **Tags** : extension, chrome, timer, pomodoro, timeout
 
-**Installation** : [Download](https://drive.google.com/open?id=1KZeOURkgLRXYMrtFFwwziJpOxntIQsiX) or clone the repository and package the extension directly in the browser extension options
-- more tools -> extension -> activate developer mode -> load the unpackaged extension
-
 A chrome extension that incorporates some of the basics of the pomodoro timer.
 
 I created this extension to refine my acquired skills and learn how to create web extensions.
@@ -28,7 +25,6 @@ Options are available to modify the working time and the pause time. To access i
 ## Todo's
 1. change the language (Defaut French)
 2. Adapt it for multiple browsers
-3. Add extension to chrome store (non international card problem)
 
 ## Authors
 - Killian Thevenin - personnal project
