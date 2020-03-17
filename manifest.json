@@ -5,9 +5,9 @@
   "version": "1.0.1",
   "description": "Timer based on the pomodoro technique",
   "icons": {
-    "32": "src/img/icon.jpg",
-    "64": "src/img/icon.jpg",
-    "128": "src/img/icon.jpg"
+    "32": "src/img/icon.png",
+    "64": "src/img/icon.png",
+    "128": "src/img/icon.png"
   },
   "browser_action": {
     "default_icon": "src/img/sablier.png"
