@@ -3,6 +3,7 @@
 ![Icon Timeout](src/img/sablieractive.png)
 
 **Installation** : [Chrome Store](https://chrome.google.com/webstore/detail/olmnamjihbdhphdoajimmegmlmlmpfbc)
+
 **Tags** : extension, chrome, timer, pomodoro, timeout
 
 A chrome extension that incorporates some of the basics of the pomodoro timer.
