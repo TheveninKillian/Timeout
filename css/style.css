@@ -66,6 +66,10 @@ body {
   transform: translateY(-50%) translateX(-50%);
 }
 
+.pause {
+  background: linear-gradient(145deg, #1f1c18 25%, #13b620 45%, #1f1c18 90%);
+}
+
 header {
   background-color: rgb(51, 51, 51);
   height: 60px;
