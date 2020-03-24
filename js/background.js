@@ -201,7 +201,7 @@ class Timeout {
 
       this.count = `${this.time.pause}min`
 
-      this.chromeBrowserAction('Timeout', '../src/img/sablieractive.png', this.count)
+      this.chromeBrowserAction('Timeout', '../src/img/sablierpause.png', this.count)
 
       this.setActivePause = setInterval(() => {
 
@@ -216,7 +216,7 @@ class Timeout {
 
         }
 
-        this.chromeBrowserAction('Timeout', '../src/img/sablieractive.png', this.count)
+        this.chromeBrowserAction('Timeout', '../src/img/sablierpause.png', this.count)
 
       }, 60000)
 
