@@ -102,15 +102,10 @@ class Timeout {
   }
 
   createMenusOptions() {
-    this.chrome.runtime.onInstalled.addListener(() => {
-
-      this.chrome.contextMenus.create({
-        id: 'olmnamjihbdhphdoajimmegmlmlmpfbc',
-        title: 'Stop timer',
-        contexts: ['browser_action']
-      });
-
-    })
+    this.chrome.contextMenus.create({
+      title: 'Stop timer',
+      contexts: ['browser_action']
+    });
   }
 
   activeTimer() {
