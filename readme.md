@@ -25,9 +25,8 @@ Options are available to modify the working time and the pause time. To access i
 - **options.html** and **options.js** : Manage the timer options. the script is related to the **background.js** script
   
 ## Todo's
-1. Add video explication
-2. change the language (Defaut French)
-3. Adapt it for multiple browsers
+1. change the language (Defaut French)
+2. Adapt it for multiple browsers
 
 ## Authors
 - Killian Thevenin - personnal project
