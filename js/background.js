@@ -5,9 +5,9 @@ class Timeout {
   constructor() {
 
     this.time = {}
-    localStorage.setItem('hour', 2)
-    localStorage.setItem('minute', 0)
-    localStorage.setItem('pause', 25)
+    localStorage.setItem('hour', 0)
+    localStorage.setItem('minute', 25)
+    localStorage.setItem('pause', 5)
     this.reset()
     this.chrome = chrome
     this.initOpenWin = false
@@ -44,7 +44,7 @@ class Timeout {
 
         clearInterval(this.setActiveTimer);
         clearInterval(this.setActivePause);
-        this.chromeBrowserAction('Timeout', '../src/img/sablier.png', '-')
+        this.chromeBrowserAction('Timeout', '../src/img/sablierpause.png', '-')
         this.initClick = 1
 
       }
@@ -231,7 +231,7 @@ class Timeout {
 
     this.initClick = 1
     this.count = ''
-    this.chromeBrowserAction('Timeout', '../src/img/sablier.png', '')
+    this.chromeBrowserAction('Timeout', '../src/img/icon.png', '')
 
     this.timeOptions()
 
