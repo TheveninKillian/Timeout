@@ -9,20 +9,20 @@ inputMinute.value = localStorage.getItem('minute')
 inputPause.value = localStorage.getItem('pause')
 
 inputHour.addEventListener('input', (e) => {
-  addValue(e, 0, 24, 'hour', 2)
+  addValue(e, 0, 24, 'hour', 0)
 })
 
 inputMinute.addEventListener('input', (e) => {
-  addValue(e, 0, 59, 'minute', 0)
+  addValue(e, 0, 59, 'minute', 25)
 })
 
 inputPause.addEventListener('input', (e) => {
-  addValue(e, 0, 2880, 'pause', 25)
+  addValue(e, 0, 2880, 'pause', 5)
 })
 
-focusEvent(inputHour, `Définir l'heure du timer avec un nombre compris entre 0 et 24`, 2)
-focusEvent(inputMinute, `Définir les minutes du timer avec un nombre compris entre 0 et 59`, 0)
-focusEvent(inputPause, `Définir le temps de pause avec un nombre (en minutes) compris entre 0 et 2880. Si valeur = 0, arrête le timer automatiquement`, 25)
+focusEvent(inputHour, `Définir l'heure du timer avec un nombre compris entre 0 et 24`, 0)
+focusEvent(inputMinute, `Définir les minutes du timer avec un nombre compris entre 0 et 59`, 25)
+focusEvent(inputPause, `Définir le temps de pause avec un nombre (en minutes) compris entre 0 et 2880. Si valeur = 0, arrête le timer automatiquement`, 5)
 
 function addValue(e, min, max, time, defaut) {
 
