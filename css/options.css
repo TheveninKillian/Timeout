@@ -4,7 +4,7 @@ body {
   background: linear-gradient(145deg, #1f1c18 15%, #5f0a00 45%, #1f1c18 85%);
   color: #fff;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
 }
 
 .shadow-body {
@@ -27,6 +27,10 @@ body {
   text-align: left;
 }
 
+.container__pause{
+  margin-top: 15px !important;
+}
+
 label {
   display: block;
   font-size: 18px;
@@ -47,6 +51,6 @@ p {
   margin: 0;
   text-align: center;
   font-size: 13px;
-  bottom: 25px;
+  bottom: 10px;
   width: 100%;
 }

@@ -1,11 +1,13 @@
 const htmlBody = document.body;
 const inputHour = document.getElementById('hour');
 const inputMinute = document.getElementById('minute');
+const inputSecond = document.getElementById('second');
 const inputPause = document.getElementById('pause');
 const tips = document.getElementById('tips');
 
 inputHour.value = localStorage.getItem('hour');
 inputMinute.value = localStorage.getItem('minute');
+inputSecond.value = localStorage.getItem('second');
 inputPause.value = localStorage.getItem('pause');
 
 inputHour.addEventListener('input', (e) => {
@@ -14,6 +16,10 @@ inputHour.addEventListener('input', (e) => {
 
 inputMinute.addEventListener('input', (e) => {
   addValue(e, 0, 59, 'minute', 25);
+});
+
+inputSecond.addEventListener('input', (e) => {
+  addValue(e, 0, 59, 'second', 0);
 });
 
 inputPause.addEventListener('input', (e) => {
@@ -29,6 +35,11 @@ focusEvent(
   inputMinute,
   `Set the minute of the timer with a number between 0 and 59`,
   25
+);
+focusEvent(
+  inputSecond,
+  `Set the second of the timer with a number between 0 and 59`,
+  0
 );
 focusEvent(
   inputPause,
@@ -72,6 +83,14 @@ function focusEvent(input, text, defaut) {
         input.value = defaut;
         tips.innerHTML = 'error';
         localStorage.setItem('minute', defaut);
+      }
+    }
+
+    if (input === inputSecond) {
+      if (input.value > 59) {
+        input.value = defaut;
+        tips.innerHTML = 'error';
+        localStorage.setItem('second', defaut);
       }
     }
 
